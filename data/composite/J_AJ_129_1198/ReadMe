@@ -1,0 +1,135 @@
+J/AJ/129/1198    SDSS quasars in SWIRE ELAIS N1 field    (Hatziminaoglou+, 2005)
+================================================================================
+Sloan Digital Sky Survey quasars in the Spitzer wide-area infrared extragalactic
+survey (SWIRE) ELAIS N1 field: properties and  spectral energy distributions.
+    Hatziminaoglou E., Perez-Fournon I., Polletta M., Afonso-Luis A.,
+    Hernan-Caballero A., Montenegro-Montes F.M., Lonsdale C., Xu C.K.,
+    Franceschini A., Rowan-Robinson M., Babbedge T., Smith H.E., Surace J.,
+    Shupe D., Fang F., Farrah D., Oliver S., Gonzalez-Solares E.A., Serjeant S.
+   <Astron. J., 129, 1198-1211 (2005)>
+   =2005AJ....129.1198H
+================================================================================
+ADC_Keywords: QSOs ; Photometry, infrared ; Redshifts
+Keywords: galaxies: active - infrared: general - quasars: general
+
+Abstract:
+    We present a mid-infrared (MIR) analysis of 35 quasars with
+    spectroscopic redshifts selected from the Spitzer Wide-Area Infrared
+    Extragalactic Survey (SWIRE). We discuss their optical and MIR colors
+    and show that these quasars occupy well-defined regions in MIR
+    color-color space. We examine the issue of type 1 active galactic
+    nuclei candidate selection in detail and propose new selection methods
+    based on MIR colors. The available multiband data allow us to
+    construct two new, well-sampled quasar templates, covering wavelengths
+    from the ultraviolet to the MIR.
+
+Description:
+    The MIR data used here are taken from the SWIRE ELAIS N1 field and
+    were obtained in 2004 February with both IRAC and MIPS. For the
+    purposes of this work only the four IRAC bands (referred to as IRAC1,
+    IRAC2, etc., throughout) and MIPS 24{mu}m (hereafter MIPS24) are used.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName  Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe        80        .   This file
+table1.dat   109       35   Positions, redshifts, optical magnitudes, and
+                             aperture fluxes for the 35 spectroscopically
+                             confirmed quasars
+table2.dat    15     1055   Quasar SED template created using the
+                             35 SWIRE-SDSS quasars
+table3.dat    15      575   Quasar SED template created using the SWIRE-SDSS
+                             quasar subsample with the largest IR fluxes
+table4.dat    85       12   2MASS Vega magnitudes, ISO fluxes (from Vaccari
+                             et al. 2005MNRAS.358..397V), radio fluxes, and
+                             related errors (whenever available) for the
+                             quasars with near-IR and/or 15{mu}m and/or
+                             radio counterparts
+--------------------------------------------------------------------------------
+
+See also:
+  II/255              : SWIRE ELAIS N1 Source Catalogs (Surace+, 2004)
+  http://www.sdss.org : SDSS Home Page
+
+Byte-by-byte Description of file: table1.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units     Label        Explanations
+--------------------------------------------------------------------------------
+   1-  2  I2    ---       [HPP2005]    Sequential number
+   4-  8  A5    ---     f_[HPP2005]    Flag on [HPP2005] (1)
+  10- 11  I2    h         RAh          Hour of Right Ascension (J2000)
+  13- 14  I2    min       RAm          Minute of Right Ascension (J2000)
+  16- 20  F5.2  s         RAs          Second of Right Ascension (J2000)
+      21  A1    ---       DE-          Sign of the Declination (J2000)
+  22- 23  I2    deg       DEd          Degree of Declination (J2000)
+  25- 26  I2    arcmin    DEm          Arcminute of Declination (J2000)
+  28- 31  F4.1  arcsec    DEs          Arcseconde of Declination (J2000)
+  34- 38  F5.3  ---       z            Redshift
+  40- 44  F5.2  mag       umag         SDSS u band magnitude
+  46- 50  F5.2  mag       gmag         SDSS g band magnitude
+  52- 56  F5.2  mag       rmag         SDSS r band magnitude
+  58- 62  F5.2  mag       imag         SDSS i band magnitude
+  64- 68  F5.2  mag       zmag         SDSS z band magnitude
+  70- 73  F4.2  mag       IRAC1mag     ? IRAC1 band (3.6{mu}m) magnitude (2)
+  75- 78  F4.2  mag       IRAC2mag     ? IRAC2 band (4.5{mu}m) magnitude (2)
+  80- 83  F4.2  mag       IRAC3mag     ? IRAC3 band (5.8{mu}m) magnitude
+  85- 88  F4.2  mag     e_IRAC3mag     ? Error in IRAC3mag
+  90- 93  F4.2  mag       IRAC4mag     ? IRAC4 band (8{mu}m) magnitude
+  95- 98  F4.2  mag     e_IRAC4mag     ? Error in IRAC4mag
+ 100-104  F5.2  mag       MIPS24mag    ? MIPS 24{mu}m magnitude
+ 106-109  F4.2  mag     e_MIPS24mag    ? Error in MIPS24mag
+--------------------------------------------------------------------------------
+Note (1): Flag on Seq, defined as follows:
+    a = Object at the border of the field not (or partially) covered by IRAC.
+    b = Object with 2MASS JHK counterparts.
+    c = Object with radio detection.
+    d = Object with ELAIS 15{um}m detection.
+    e = Object with RASS detections.
+    f = The 2MASS magnitudes, ISO 15{mu}m, and radio fluxes can be found
+        in Table 4.
+    g = Object in the MIPS 24{mu}m gap.
+    h = Object with IRAS detections.
+Note (2): The errors in the IRAC1 and IRAC2 fluxes are lower than 0.01mJy
+     (typically on the order of a few microjanskys) and are not reported here.
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table2.dat table3.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units   Label     Explanations
+--------------------------------------------------------------------------------
+   1-  8  F8.4  um      Lambda    [0.0792/173.897] Wavelength in microns (1)
+  10- 15  F6.3  ---     Flux      Normalized flux: F_{lambda}_/F_0.3{mu}m_
+--------------------------------------------------------------------------------
+Note (1): Spanning the wavelength range between ~800 and 2x10^6^{AA}.
+--------------------------------------------------------------------------------
+
+Byte-by-byte Description of file: table4.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units     Label       Explanations
+--------------------------------------------------------------------------------
+   1-  2  I2    ---       [HPP2005]   Sequential number
+   4-  5  I2    h         RAh         Hour of Right Ascension (J2000)
+   7-  8  I2    min       RAm         Minute of Right Ascension (J2000)
+  10- 14  F5.2  s         RAs         Second of Right Ascension (J2000)
+      15  A1    ---       DE-         Sign of the Declination (J2000)
+  16- 17  I2    deg       DEd         Degree of Declination (J2000)
+  19- 20  I2    arcmin    DEm         Arcminute of Declination (J2000)
+  22- 25  F4.1  arcsec    DEs         Arcsecond of Declination (J2000)
+  27- 31  F5.2  mag       Jmag        ? 2MASS J band magnitude
+  33- 36  F4.2  mag     e_Jmag        ? Error in Jmag
+  38- 42  F5.2  mag       Hmag        ? 2MASS H band magnitude
+  44- 47  F4.2  mag     e_Hmag        ? Error in Hmag
+  49- 53  F5.2  mag       Kmag        ? 2MASS K band magnitude
+  55- 58  F4.2  mag     e_Kmag        ? Error in Kmag
+  60- 63  F4.2  mJy       S15um       ? ISO 15{mu}m flux
+  65- 68  F4.2  mJy     e_S15um       ? Error in S15um
+  70- 72  I3    mJy       S4.85GHz    ? Flux at 4.85GHz
+  74- 79  F6.2  mJy       S1.4GHz     ? Flux at 1.4GHz
+  81- 85  F5.3  mJy     e_S1.4GHz     ? Error in S1.4GHz
+--------------------------------------------------------------------------------
+
+History:
+    From electronic version of the journal
+================================================================================
+(End)                   Greg Schwarz [AAS], Marianne Brouty [CDS]    15-Sep-2005
